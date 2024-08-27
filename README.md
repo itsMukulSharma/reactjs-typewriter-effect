@@ -1,6 +1,8 @@
-# reactjs-typewriter-effect
+# React js Typewriter Effect
 
-A customizable React component that creates a typewriter effect for a given set of words.
+A versatile React component that dynamically displays text, simulating a typewriter effect. Users can customize the typing speed, deletion speed, pause duration between words, and the overall looping behavior. The component also provides options for text color and cursor style.
+
+![reactjs-typewriter-effect-gif](https://github.com/user-attachments/assets/7175b2eb-4b06-40e3-9e49-785b0c39bebd)
 
 ## Features
 
