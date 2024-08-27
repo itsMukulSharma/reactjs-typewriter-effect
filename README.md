@@ -38,6 +38,21 @@ const ComponentName = () => {
 
 export default ComponentName;
 ```
+## Props
 
-![image](https://github.com/user-attachments/assets/e5183770-c9a6-4546-b412-9604b6ca48b5)
+![image](https://github.com/user-attachments/assets/4b05069c-04f3-477a-9481-5d3532e4d3b9)
+
+## Behavior
+
+-The component will type out each word in the words array.
+-After typing a word, it will pause for the duration specified by pauseTime.
+-It will then delete the word character by character.
+-If loop is true, it will move to the next word and repeat the process.
+-If loop is false, it will stop after typing and deleting the last word, displaying the first word in the array.
+-The animation pauses when the user hovers over the text and resumes when the mouse leaves.
+
+## Customization
+
+You can customize the appearance and behavior of the Typewriter component by adjusting the props. Experiment with different values for **typingInterval**, **deletingInterval**, and **pauseTime** to achieve the desired effect.
+
 
