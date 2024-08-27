@@ -38,3 +38,6 @@ const ComponentName = () => {
 
 export default ComponentName;
 ```
+
+![image](https://github.com/user-attachments/assets/e5183770-c9a6-4546-b412-9604b6ca48b5)
+
