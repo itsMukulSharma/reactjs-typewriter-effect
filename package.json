@@ -1,0 +1,35 @@
+{
+  "name": "reactjs-typewriter-effect",
+  "version": "1.0.0",
+  "description": "A React typewriter component with multiple words and customization options",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsMukulSharma/reactjs-typewriter-effect.git"
+  },
+  "keywords": [
+    "typewriter",
+    "react",
+    "npm",
+    "react-typewriter"
+  ],
+  "author": "Mukul Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itsMukulSharma/reactjs-typewriter-effect/issues"
+  },
+  "homepage": "https://github.com/itsMukulSharma/reactjs-typewriter-effect#readme",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "babel-loader": "^9.1.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  }
+}
