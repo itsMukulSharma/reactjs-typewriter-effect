@@ -8,6 +8,12 @@ const Typewriter = ({
   loop = true,
   color = "inherit",
   cursorStyle = "|",
+  fontName,
+  fontSize,
+  fontWeight,
+  textShadow,
+  lineHeight,
+  customClass,
 }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
@@ -15,6 +21,18 @@ const Typewriter = ({
   const [isPaused, setIsPaused] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
+
+  useEffect(() => {
+    if (fontName) {
+      const link = document.createElement("link");
+      link.href = `https://fonts.googleapis.com/css?family=${fontName.replace(
+        " ",
+        "+"
+      )}`;
+      link.rel = "stylesheet";
+      document.head.appendChild(link);
+    }
+  }, [fontName]);
 
   useEffect(() => {
     if (isHovered || isFinished) return;
@@ -76,9 +94,19 @@ const Typewriter = ({
     setIsHovered(false);
   };
 
+  const typewriterStyle = {
+    color,
+    fontFamily: fontName,
+    fontSize,
+    fontWeight,
+    textShadow,
+    lineHeight,
+  };
+
   return (
     <span
-      style={{ color }}
+      style={typewriterStyle}
+      className={customClass}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

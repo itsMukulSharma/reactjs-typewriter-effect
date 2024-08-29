@@ -1,6 +1,6 @@
 # React js Typewriter Effect
 
-A versatile React component that dynamically displays text, simulating a typewriter effect. Users can customize the typing speed, deletion speed, pause duration between words, and the overall looping behavior. The component also provides options for text color and cursor style.
+A versatile React component that dynamically displays text, simulating a typewriter effect. Users can customize the typing speed, deletion speed, pause duration between words, and the overall looping behavior. The component also provides options for many other CSS properties with Custom Classes.
 
 ![reactjs-typewriter-effect-gif](https://github.com/user-attachments/assets/7175b2eb-4b06-40e3-9e49-785b0c39bebd)
 
@@ -11,7 +11,7 @@ A versatile React component that dynamically displays text, simulating a typewri
 - Customizable typing, deleting, and pause intervals
 - Option to loop through words or stop at the end
 - Pauses on hover
-- Customizable text color and cursor style
+- Customizable FontName, size, weight, cursor style and many other CSS properties with Custom classes.
 
 ## Installation
 
@@ -33,6 +33,12 @@ const ComponentName = () => {
         loop={true}
         color="blue"
         cursorStyle="_"
+        fontName="Roboto"
+        fontSize="24px"
+        fontWeight={600}
+        textShadow="2px 2px 4px rgba(0,0,0,0.3)"
+        lineHeight="1.5"
+        customClass="opacity"
       />
     </div>
   );
@@ -40,6 +46,7 @@ const ComponentName = () => {
 
 export default ComponentName;
 ```
+
 ## Props
 
 ![image](https://github.com/user-attachments/assets/4b05069c-04f3-477a-9481-5d3532e4d3b9)
@@ -55,6 +62,4 @@ export default ComponentName;
 
 ## Customization
 
-You can customize the appearance and behavior of the Typewriter component by adjusting the props. Experiment with different values for **typingInterval**, **deletingInterval**, and **pauseTime** to achieve the desired effect.
-
-
+You can customize the appearance and behavior of the Typewriter component by adjusting the props. Experiment with different values for **typingInterval**, **deletingInterval**, **pauseTime**, **fontName**, **fontSize**, **fontWeight** and many other **CSS** properties as shown above to achieve the desired effect.
