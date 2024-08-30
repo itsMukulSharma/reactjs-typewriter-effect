@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import RenderTypewriter from "./RenderTypewriter";
 
 const Typewriter = ({
   words,
@@ -48,7 +49,7 @@ const Typewriter = ({
     } else if (isDeleting) {
       if (currentText.length > 0) {
         timer = setTimeout(() => {
-          setCurrentText(word.slice(0, currentText.length - 1));
+          setCurrentText((prevText) => prevText.slice(0, -1));
         }, deletingInterval);
       } else {
         setIsDeleting(false);
@@ -62,9 +63,9 @@ const Typewriter = ({
         }
       }
     } else {
-      if (currentText.length < word.length) {
+      if (currentText.length < word.text.length) {
         timer = setTimeout(() => {
-          setCurrentText(word.slice(0, currentText.length + 1));
+          setCurrentText((prevText) => word.text.slice(0, prevText.length + 1));
         }, typingInterval);
       } else {
         setIsPaused(true);
@@ -103,6 +104,9 @@ const Typewriter = ({
     lineHeight,
   };
 
+  const currentWord = words[currentWordIndex];
+  const styledText = RenderTypewriter(currentText, currentWord.styles);
+
   return (
     <span
       style={typewriterStyle}
@@ -110,7 +114,7 @@ const Typewriter = ({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {currentText}
+      {styledText}
       <span
         id="cursor"
         className="cursor"

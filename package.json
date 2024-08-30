@@ -1,6 +1,6 @@
 {
   "name": "reactjs-typewriter-effect",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A React typewriter component with multiple words and customization options",
   "main": "dist/index.js",
   "files": [
@@ -18,7 +18,21 @@
     "typewriter",
     "react",
     "npm",
-    "react-typewriter"
+    "react-typewriter",
+    "typewriter-effect",
+    "reactjs-typewriter-effect",
+    "typing",
+    "animation",
+    "effect",
+    "dynamic",
+    "styled",
+    "customizable",
+    "user-interface",
+    "typography",
+    "animated-text",
+    "react-component",
+    "npm-package",
+    "text-animation"
   ],
   "author": "Mukul Sharma",
   "license": "MIT",
